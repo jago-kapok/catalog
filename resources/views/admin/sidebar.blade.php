@@ -1,6 +1,6 @@
 <nav id="sidebar" class="sidebar js-sidebar">
     <div class="sidebar-content js-simplebar">
-        <a class="sidebar-brand" href="index.html">
+        <a class="sidebar-brand" href="{{ route('admin') }}">
             <span class="align-middle">Laravel</span>
         </a>
 
@@ -14,18 +14,18 @@
                 </a>
             </li>
 
-            <li class="sidebar-header">Produk & Kategori</li>
+            <li class="sidebar-header">Menu Utama</li>
 
             <li class="sidebar-item">
                 <a class="sidebar-link" href="index.html">
                     <i class="align-middle" data-feather="sliders"></i>
-                    <span class="align-middle">Produk</span>
+                    <span class="align-middle">Blog Post</span>
                 </a>
             </li>
 
             <li class="sidebar-item">
                 <a class="sidebar-link" href="pages-profile.html">
-                    <i class="align-middle" data-feather="user"></i>
+                    <i class="align-middle" data-feather="list"></i>
                     <span class="align-middle">Kategori</span>
                 </a>
             </li>
@@ -34,7 +34,7 @@
 
             <li class="sidebar-item">
                 <a class="sidebar-link" href="ui-buttons.html">
-                    <i class="align-middle" data-feather="square"></i>
+                    <i class="align-middle" data-feather="users"></i>
                     <span class="align-middle">Manajemen Akun</span>
                 </a>
             </li>
@@ -46,20 +46,5 @@
                 </a>
             </li>
         </ul>
-
-        <div class="sidebar-cta">
-            <div class="sidebar-cta-content">
-                <strong class="d-inline-block mb-2">Upgrade to Pro</strong>
-                <div class="mb-3 text-sm">
-                    Are you looking for more components? Check out our premium
-                    version.
-                </div>
-                <div class="d-grid">
-                    <a href="upgrade-to-pro.html" class="btn btn-primary"
-                        >Upgrade to Pro</a
-                    >
-                </div>
-            </div>
-        </div>
     </div>
 </nav>
