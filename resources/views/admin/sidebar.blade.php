@@ -7,8 +7,8 @@
         <ul class="sidebar-nav">
             <li class="sidebar-header">Beranda</li>
 
-            <li class="sidebar-item active">
-                <a class="sidebar-link" href="index.html">
+            <li class="sidebar-item {{ (request()->is('home*')) ? 'active' : '' }}">
+                <a class="sidebar-link" href="{{ route('admin') }}">
                     <i class="align-middle" data-feather="sliders"></i>
                     <span class="align-middle">Dashboard</span>
                 </a>
@@ -16,15 +16,15 @@
 
             <li class="sidebar-header">Menu Utama</li>
 
-            <li class="sidebar-item">
-                <a class="sidebar-link" href="index.html">
+            <li class="sidebar-item {{ (request()->is('post*')) ? 'active' : '' }}">
+                <a class="sidebar-link" href="{{ route('post') }}">
                     <i class="align-middle" data-feather="sliders"></i>
                     <span class="align-middle">Blog Post</span>
                 </a>
             </li>
 
-            <li class="sidebar-item">
-                <a class="sidebar-link" href="pages-profile.html">
+            <li class="sidebar-item {{ (request()->is('kategori*')) ? 'active' : '' }}">
+                <a class="sidebar-link" href="{{ route('kategori') }}">
                     <i class="align-middle" data-feather="list"></i>
                     <span class="align-middle">Kategori</span>
                 </a>
